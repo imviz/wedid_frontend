@@ -168,9 +168,14 @@ const Example = ({ type, color }) => (
     </Col>
     <Col lg={8}>
       <div style={{'height':'60vh','backgroundColor':'black'}}>
+      <h3 align='center'  style={{color:'white'}}>Service Managing</h3>
       <div style={{'height':'60vh','backgroundColor':'white '}}>
           <Card sx={{ minWidth:'30%', maxWidth:'100%' ,padding:'50px'}}>         
       <Card>
+      {user ? <div align='center'>
+         <h4>No history found</h4>
+         <img style={{width:'100px',height:'100px'}} src='https://cdn.dribbble.com/users/2666881/screenshots/11346959/media/eea44d0bd2ba581f2087172a3891caba.png?compress=1&resize=400x300&vertical=top'></img>
+         </div>: 
       <Table striped>
       <thead>
         <tr>
@@ -195,7 +200,7 @@ const Example = ({ type, color }) => (
 
          )}       
       </tbody>
-    </Table>
+    </Table> }
         {single && 
          <Dialog
               // style={{width:'900px'}} 

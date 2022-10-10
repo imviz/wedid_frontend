@@ -369,11 +369,13 @@ const upiDelete=async(upiId)=>{
   return (
     <div>
       <Row>
+        
         <Col lg={4}>
           <ListSideBar val={1}/>
         </Col>
         <Col  lg={8}>
           <div style={{'height':'60vh','backgroundColor':'black'}}>
+          <h3 align='center'  style={{color:'white'}}>PROFILE</h3>
           <Card sx={{ maxWidth: 930 ,maxHeight:1000,height:'550px',padding:'50px'}}>
       <CardActionArea>
         <CardMedia style={{height:'200px',width:'200px'}} 

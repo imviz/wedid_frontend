@@ -54,7 +54,7 @@ function Verify() {
               timeCheck()
               setError(res.data.error)
               console.log(res.data.error)
-              handleShow()
+              // handleShow()
               setShowz(false)
             }
             if(res.data.is_active==true){

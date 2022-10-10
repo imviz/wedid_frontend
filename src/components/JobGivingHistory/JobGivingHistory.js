@@ -110,10 +110,15 @@ const handleAvailable=async(id,name)=>{
     </Col>
     <Col lg={8}>
       <div style={{'height':'60vh','backgroundColor':'black'}}>
+      <h3 align='center'  style={{color:'white'}}>Job Given</h3>
       <div style={{'height':'60vh','backgroundColor':'white '}}>
           <Card sx={{ minWidth:'30%', maxWidth:'100%' ,padding:'50px'}}> 
          
       <Card>
+      {user ? <div align='center'>
+         <h4>No history found</h4>
+         <img style={{width:'100px',height:'100px'}} src='https://cdn.dribbble.com/users/2666881/screenshots/11346959/media/eea44d0bd2ba581f2087172a3891caba.png?compress=1&resize=400x300&vertical=top'></img>
+         </div>: 
       <Table striped>
       <thead>
         <tr>
@@ -127,6 +132,7 @@ const handleAvailable=async(id,name)=>{
         </tr>
       </thead>
       <tbody> 
+        
        {user && user.map((obj,index)=>     
        <tr>
           <td >{index+1}</td>
@@ -146,7 +152,7 @@ const handleAvailable=async(id,name)=>{
 
          )}       
       </tbody>
-    </Table>
+    </Table> }
         {single &&  <Dialog
               // style={{width:'900px'}} 
             open={open}

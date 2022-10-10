@@ -517,7 +517,7 @@ const  checkChecker=(e)=>{
   return (
     <div >       
       <div align='center'>
-      <h1 className='heading'>APPLY FOR AN OPPORTUNITY</h1>
+      <h1 className='heading'>Giving An Service </h1>
       </div>
         
           {/* <CommonStepper className='mt-5' activeStep={0} steps={steps}/> */}

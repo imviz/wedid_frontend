@@ -14,7 +14,7 @@ function ProfilePage() {
         <Row className='justify-content-center mt-1 pt-5'>
         
             <Col lg={8}>
-            <h3 style={{textAlign:'center',color:'white'}}>PROFILE</h3>
+           
                 <Profile/>
                 
             </Col>

@@ -203,9 +203,14 @@ const userBank=async()=>{
     </Col>
     <Col lg={8}>
       <div style={{'height':'60vh','backgroundColor':'black'}}>
+      <h3 align='center'  style={{color:'white'}}>Service Provider</h3>
       <div style={{'height':'60vh','backgroundColor':'white '}}>
           <Card sx={{ minWidth:'30%', maxWidth:'100%' ,padding:'50px'}}>        
       <Card>
+      {user ? <div align='center'>
+         <h4>No history found</h4>
+         <img style={{width:'100px',height:'100px'}} src='https://cdn.dribbble.com/users/2666881/screenshots/11346959/media/eea44d0bd2ba581f2087172a3891caba.png?compress=1&resize=400x300&vertical=top'></img>
+         </div>: 
       <Table striped>
       <thead>
         <tr>
@@ -229,7 +234,7 @@ const userBank=async()=>{
         </tr> 
          )}       
       </tbody>
-    </Table>
+    </Table> }
         {single &&  <Dialog      
             open={open}
             onClose={handleClose}
@@ -240,9 +245,7 @@ const userBank=async()=>{
               {"Details"}
             </DialogTitle>
             <DialogContent>
-              <DialogContentText style={{color:'black'}} id="alert-dialog-description">   
-              
-             
+              <DialogContentText style={{color:'black'}} id="alert-dialog-description">      
                { verify.start_otp ? 
                 <div align='center'>   
                 { verify.start_verify ? <div> 
@@ -263,12 +266,9 @@ const userBank=async()=>{
                     </div>
                     }
                     </div>
-                 
                   </div>:
-                  
                   <div>
                     <>
-                  
                   <span>Start the job  Successfully , finish the job enter the button for verifications </span>                  
                  
                   {count ?   <Example  type='bars' color='red'/>

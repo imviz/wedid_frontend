@@ -14,7 +14,7 @@ function VerifyServiceEmployeePage() {
         <Row className='justify-content-center mt-1 pt-5'>
 
             <Col lg={11}>
-            <h3 style={{textAlign:'center',color:'white'}}>Verify</h3>
+       
                 < VerifyServiceEmploye />
                 
             </Col>
