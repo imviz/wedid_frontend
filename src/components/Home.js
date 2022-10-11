@@ -17,13 +17,15 @@ function Home() {
      <img className='pic1' src='https://5.imimg.com/data5/JG/BW/MY-64708915/jobs-in-greater-noida-1000x1000.jpg' alt='nothing inside' /> 
         <h1 className='main-header1'>NEED A SERVICE ? </h1>
         <p className='sub-heading'>Are you giving a service here ?  click the button </p>   
-        <Button className='clk-btn'><Link to='/postjob' style={{textDecoration:'None',color:'white '}}>Click here</Link></Button>
+        {/* <Button className='clk-btn'><Link to='/postjob' style={{textDecoration:'None',color:'white '}}>Click here</Link></Button> */}
+        <Link to='/postjob' style={{textDecoration:'None',color:'white '}}><Button className='clk-btn'>Click here</Button></Link>
      </div>
      <div  className='main-btn2 mt-5 ml-5 textAlign:center'>
      <img className='pic1' src='https://as2.ftcdn.net/v2/jpg/03/66/03/87/1000_F_366038737_36EAv6suOflplUQlHAhOlAxI3OYloJmi.jpg' alt='nothing inside' />
            <h1 className='main-header1'>LOOKING FOR AN OPPORTUNITY ?</h1>
         <p className='sub-heading'>Are you looking for a a service here ? click the button </p>   
-        <Button className='clk-btn'><Link to='/joblook' style={{textDecoration:'None',color:'white '}}>Click here</Link></Button>
+        {/* <Button className='clk-btn'><Link to='/joblook' style={{textDecoration:'None',color:'white '}}>Click here</Link></Button> */}
+        <Link to='/joblook' style={{textDecoration:'None',color:'white '}}><Button className='clk-btn'>Click here</Button></Link>
      </div>
      
      <div  className='main-btn1 mt-5 ml-5 textAlign:center'>
@@ -31,7 +33,7 @@ function Home() {
     
         <h1 className='main-header1'>RENT OUT EQUIPMENT ? </h1>
         <p className='sub-heading'>Are you giving a rent item  here ? click the button </p>   
-        <Button className='clk-btn'><Link to='/postrent' style={{textDecoration:'None',color:'white '}}>Click here</Link></Button>
+        <Link to='/postrent' style={{textDecoration:'None',color:'white '}}><Button className='clk-btn'>Click here</Button></Link>
      </div>
      
      <div  className='main-btn2 mt-5 ml-5 textAlign:center'>
@@ -39,7 +41,8 @@ function Home() {
      <h1 className='main-header1'>BORROW AN EQUIPMENT</h1>
       
         <p className='sub-heading'>Are you looking for a rent item  ?are you want a job then click the button </p>   
-        <Button className='clk-btn'><Link to='/rentlook' style={{textDecoration:'None',color:'white '}}>Click here</Link></Button>
+        {/* <Button className='clk-btn'><Link to='/rentlook' style={{textDecoration:'None',color:'white '}}>Click here</Link></Button> */}
+        <Link to='/rentlook' style={{textDecoration:'None',color:'white '}}><Button className='clk-btn'>Click here</Button></Link>
      </div>
      
 

@@ -82,6 +82,9 @@ function GivingRent() {
 
   const handleClick = () => {
     setOpen(true);
+    setTimeout(() => {
+      setOpen(false)
+    }, 5000);
   };
 
   const handleClose = (event, reason) => {
@@ -735,7 +738,7 @@ const  checkChecker=(e)=>{
                 { (!che1 || !che2 )?   <Alert variant="filled" auto severity="error">Please click tick for terms and condition</Alert>   : ' '}        
                 <p style={{color:'yellow',marginTop:'4rem'}}>** charges applied</p>
                 <p  style={{color:'red'}}>**  you should pay 50 rupess for posting </p>  
-                { open ?   <Alert variant="filled" auto severity="success" onClick={handleCloses}>Sucessfully created the post</Alert>   : ' '}  
+                { open &&   <Alert variant="filled" auto severity="success" onClick={handleCloses}>Sucessfully created the post</Alert>   }  
             </div>
           
              <Button className='payment-btn2' type='submit' variant="outline-warning" onClick={checkChecker}><p>Make Payment with razorpay</p></Button><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
